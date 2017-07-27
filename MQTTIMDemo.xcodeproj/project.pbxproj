@@ -15,6 +15,8 @@
 		04DC7E1D1EFB9697007D448C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DC7E1B1EFB9697007D448C /* LaunchScreen.storyboard */; };
 		04DC7E281EFB9697007D448C /* MQTTIMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC7E271EFB9697007D448C /* MQTTIMDemoTests.m */; };
 		04DC7E331EFB9697007D448C /* MQTTIMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC7E321EFB9697007D448C /* MQTTIMDemoUITests.m */; };
+		04DC7E421EFBBB07007D448C /* MQTTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC7E411EFBBB07007D448C /* MQTTManager.m */; };
+		4EAA7A874E6B7F10F7F649F6 /* libPods-MQTTIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11D6039A1FE222E3A47C12 /* libPods-MQTTIMDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		04DC7E2E1EFB9697007D448C /* MQTTIMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTIMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC7E321EFB9697007D448C /* MQTTIMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTTIMDemoUITests.m; sourceTree = "<group>"; };
 		04DC7E341EFB9697007D448C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC7E401EFBBB07007D448C /* MQTTManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTManager.h; sourceTree = "<group>"; };
+		04DC7E411EFBBB07007D448C /* MQTTManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTManager.m; sourceTree = "<group>"; };
+		358775077171DF46C3CFC595 /* Pods-MQTTIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTIMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTIMDemo/Pods-MQTTIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3EA1D89938DCD99AA00AC168 /* Pods-MQTTIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTIMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTIMDemo/Pods-MQTTIMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D11D6039A1FE222E3A47C12 /* libPods-MQTTIMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQTTIMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAA7A874E6B7F10F7F649F6 /* libPods-MQTTIMDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				04DC7E261EFB9697007D448C /* MQTTIMDemoTests */,
 				04DC7E311EFB9697007D448C /* MQTTIMDemoUITests */,
 				04DC7E0B1EFB9695007D448C /* Products */,
+				86EE639787312D8F70462169 /* Pods */,
+				F645401F7B4EEF8144626472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +115,8 @@
 				04DC7E111EFB9695007D448C /* AppDelegate.m */,
 				04DC7E131EFB9695007D448C /* ViewController.h */,
 				04DC7E141EFB9695007D448C /* ViewController.m */,
+				04DC7E401EFBBB07007D448C /* MQTTManager.h */,
+				04DC7E411EFBBB07007D448C /* MQTTManager.m */,
 				04DC7E161EFB9696007D448C /* Main.storyboard */,
 				04DC7E191EFB9696007D448C /* Assets.xcassets */,
 				04DC7E1B1EFB9697007D448C /* LaunchScreen.storyboard */,
@@ -140,6 +152,23 @@
 			path = MQTTIMDemoUITests;
 			sourceTree = "<group>";
 		};
+		86EE639787312D8F70462169 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				358775077171DF46C3CFC595 /* Pods-MQTTIMDemo.debug.xcconfig */,
+				3EA1D89938DCD99AA00AC168 /* Pods-MQTTIMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F645401F7B4EEF8144626472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D11D6039A1FE222E3A47C12 /* libPods-MQTTIMDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04DC7E371EFB9697007D448C /* Build configuration list for PBXNativeTarget "MQTTIMDemo" */;
 			buildPhases = (
+				B898269AA85B489D2B94C2A2 /* [CP] Check Pods Manifest.lock */,
 				04DC7E061EFB9694007D448C /* Sources */,
 				04DC7E071EFB9694007D448C /* Frameworks */,
 				04DC7E081EFB9694007D448C /* Resources */,
+				6BB92B5FCEC9E4F0DDB406A4 /* [CP] Embed Pods Frameworks */,
+				6DF2C6F8AB858B3B2E1CD950 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +300,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BB92B5FCEC9E4F0DDB406A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTIMDemo/Pods-MQTTIMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DF2C6F8AB858B3B2E1CD950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTIMDemo/Pods-MQTTIMDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B898269AA85B489D2B94C2A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04DC7E061EFB9694007D448C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04DC7E151EFB9695007D448C /* ViewController.m in Sources */,
+				04DC7E421EFBBB07007D448C /* MQTTManager.m in Sources */,
 				04DC7E121EFB9695007D448C /* AppDelegate.m in Sources */,
 				04DC7E0F1EFB9695007D448C /* main.m in Sources */,
 			);
@@ -422,6 +503,7 @@
 		};
 		04DC7E381EFB9697007D448C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358775077171DF46C3CFC595 /* Pods-MQTTIMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MQTTIMDemo/Info.plist;
@@ -433,6 +515,7 @@
 		};
 		04DC7E391EFB9697007D448C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA1D89938DCD99AA00AC168 /* Pods-MQTTIMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MQTTIMDemo/Info.plist;
@@ -507,6 +590,7 @@
 				04DC7E391EFB9697007D448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DC7E3A1EFB9697007D448C /* Build configuration list for PBXNativeTarget "MQTTIMDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +599,7 @@
 				04DC7E3C1EFB9697007D448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DC7E3D1EFB9697007D448C /* Build configuration list for PBXNativeTarget "MQTTIMDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +608,7 @@
 				04DC7E3F1EFB9697007D448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
